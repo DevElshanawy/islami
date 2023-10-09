@@ -29,7 +29,6 @@ class _SuraDetailsState extends State<SuraDetails> {
         ),
         body: Card(
           elevation: 14,
-
           margin: EdgeInsets.all(18),
           shape: OutlineInputBorder(borderRadius: BorderRadius.circular(25),
           borderSide: BorderSide(color: MyThemData.primary),
