@@ -18,13 +18,13 @@ class MyThemData{
         color:blackColor,
       ),
       bodyMedium: GoogleFonts.elMessiri(
-        fontSize: 30,
+        fontSize: 25,
         fontWeight: FontWeight.w700,
         color:blackColor,
       ),
       bodySmall: GoogleFonts.elMessiri(
         fontSize: 20,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.w300,
         color:Color(0xFFFFFFFFF),
       ),
     ),

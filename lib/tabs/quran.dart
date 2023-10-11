@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:islami/my_them_data.dart';
 import 'package:islami/sura_details.dart';
 import 'package:islami/sura_model.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class QuranTab extends StatelessWidget {
   List<String>suraNames = [
@@ -141,10 +142,9 @@ class QuranTab extends StatelessWidget {
             thickness: 2,
             color: MyThemData.primary,
           ),
-          Text("Sura Names", style: Theme
-              .of(context)
-              .textTheme
-              .bodyMedium),
+          Text(
+              AppLocalizations.of(context)!.suraName,
+              style: Theme.of(context).textTheme.bodyLarge),
           Divider(
             thickness: 2,
             color: MyThemData.primary,
@@ -165,10 +165,7 @@ class QuranTab extends StatelessWidget {
                         arguments: SuraModel(suraNames[index], index));
                   },
                   child: Text(
-                    suraNames[index], textAlign: TextAlign.center, style: Theme
-                      .of(context)
-                      .textTheme
-                      .bodySmall!
+                    suraNames[index], textAlign: TextAlign.center, style: Theme.of(context).textTheme.bodySmall!
                       .copyWith(color: MyThemData.blackColor),),
                 );
               }, itemCount: suraNames.length,),
