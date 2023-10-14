@@ -23,12 +23,12 @@ class _AhadethTabState extends State<AhadethTab> {
         Image.asset("assets/images/ahadeth_image.png"),
         Divider(
           thickness: 3,
-          color: MyThemData.primary,
+          color: Theme.of(context).colorScheme.secondary,
         ),
         Text(AppLocalizations.of(context)!.ahadeth,style: Theme.of(context).textTheme.bodyLarge),
         Divider(
           thickness: 3,
-          color: MyThemData.primary,
+          color: Theme.of(context).colorScheme.secondary,
         ),
         Expanded(
           child: ListView.separated(
@@ -44,7 +44,7 @@ class _AhadethTabState extends State<AhadethTab> {
                         arguments: allAhadeth[index]);
                   },
                   child: Text(
-                    allAhadeth[index].title,style: Theme.of(context).textTheme.bodySmall!.copyWith(color: MyThemData.blackColor),
+                    allAhadeth[index].title,style: Theme.of(context).textTheme.bodySmall!.copyWith(color: Theme.of(context).colorScheme.onPrimary),
                     textAlign: TextAlign.center,
                   ));
             },
