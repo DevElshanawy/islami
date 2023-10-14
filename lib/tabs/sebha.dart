@@ -30,7 +30,7 @@ class _SebhaTabState extends State<SebhaTab> {
                 margin: EdgeInsets.only(left: 60),
                 child: Image.asset(
                   "assets/images/head _ sebha.png",
-                  width: 70,
+                  width: 70,color: Theme.of(context).colorScheme.secondary,
                 ),
               ),
               Align(
@@ -60,7 +60,7 @@ class _SebhaTabState extends State<SebhaTab> {
                          setState(() {});
                         },
                         child: Image.asset(
-                          "assets/images/sebha_image.png",
+                          "assets/images/sebha_image.png",color: Theme.of(context).colorScheme.secondary,
                           width: 200,
                         ),
                       ),
@@ -79,7 +79,7 @@ class _SebhaTabState extends State<SebhaTab> {
               padding: EdgeInsets.symmetric(horizontal: 20,vertical: 15),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color:MyThemData.primary.withOpacity(.57)),
+                  color: Theme.of(context).colorScheme.primary.withOpacity(.57)),
               child: Text(count.toString(),
                   style: TextStyle(fontSize: 25,fontWeight: FontWeight.w400)),
             ),
@@ -87,8 +87,8 @@ class _SebhaTabState extends State<SebhaTab> {
               padding: EdgeInsets.symmetric(horizontal: 25,vertical: 10),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
-                  color:MyThemData.primary),
-              child: Text(tasbehat[index],style: TextStyle(color:Colors.white,fontSize: 20,fontWeight: FontWeight.w400)),
+                color: Theme.of(context).colorScheme.secondary,),
+              child: Text(tasbehat[index],style: TextStyle(color: Theme.of(context).colorScheme.onSurface,fontSize: 20,fontWeight: FontWeight.w400)),
             ),
           ],
         ),

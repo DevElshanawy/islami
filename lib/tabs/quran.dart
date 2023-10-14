@@ -147,14 +147,15 @@ class QuranTab extends StatelessWidget {
               style: Theme.of(context).textTheme.bodyLarge),
           Divider(
             thickness: 2,
-            color: MyThemData.primary,
+            color: Theme.of(context).colorScheme.secondary,
+
           ),
           Expanded(
             child: ListView.separated(
               separatorBuilder: (context, index) =>
                   Divider(
                     thickness: 1,
-                    color: MyThemData.primary,
+                    color: Theme.of(context).colorScheme.secondary,
                     endIndent: 40,
                     indent: 40,
                   ),
@@ -166,7 +167,7 @@ class QuranTab extends StatelessWidget {
                   },
                   child: Text(
                     suraNames[index], textAlign: TextAlign.center, style: Theme.of(context).textTheme.bodySmall!
-                      .copyWith(color: MyThemData.blackColor),),
+                      .copyWith(color: Theme.of(context).colorScheme.onPrimary)),
                 );
               }, itemCount: suraNames.length,),
           )
